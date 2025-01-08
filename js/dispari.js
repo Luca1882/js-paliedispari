@@ -4,7 +4,7 @@ function numeroCasuale() {
 };
 
 //Funzione isPari
-function isPari(somma) {
+function parita (somma) {
     return somma % 2 === 0 ? "PARI" : "DISPARI";
 }
 
@@ -20,7 +20,7 @@ function playTheGame() {
 
     //Somma dei numeri per determinare il vincitore e confronto
     let somma = numGiocatore + numCom;
-    let verifica = isPari(somma);
+    let verifica = parita(somma);
 
     //Risultati
     console.log(`La somma è: ${somma}`);
